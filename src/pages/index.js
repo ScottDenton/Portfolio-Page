@@ -9,13 +9,16 @@ import thumb01 from '../assets/images/thumbs/EB-thumbnail.png'
 import thumb02 from '../assets/images/thumbs/02.jpg'
 
 
-import full01 from '../assets/images/fulls/eb-full.png'
-import full02 from '../assets/images/thumbs/eb-mobile.png'
-import full03 from '../assets/images/full/cs-full.png'
+import full01 from '../assets/images/fulls/eb-mobile.png'
+import full02 from '../assets/images/fulls/eb-full.png'
+import full03 from '../assets/images/fulls/cs-full.png'
 
-const DEFAULT_IMAGES = [
+const EXERCICSE_BUDDY_IMAGES = [
     { id: '1', src: full01, thumbnail: thumb01, caption: 'Exercise Buddy', description: 'A mobile responsive fitness tracking web app focused on increasing users performance.', siteLink: 'https://exercise-buddy.herokuapp.com/'},
-    { id: '2', src: full02, thumbnail: thumb02, caption: 'CodeStream', description: 'A Web app to showcase and promote top science and technology live streams and archived videos', siteLink: 'https://code-stream.herokuapp.com/'}
+    { id: '2', src: full02}
+];
+const CODESTREAM_IMAGES = [
+    { id: '3', src: full03, thumbnail: thumb02, caption: 'CodeStream', description: 'A Web app to showcase and promote top science and technology live streams and archived videos', siteLink: 'https://code-stream.herokuapp.com/'}
 ];
 
 class HomeIndex extends React.Component {
@@ -91,7 +94,13 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <h2>Recent Work</h2>
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description, siteLink }) => ({
+                        <Gallery images={EXERCICSE_BUDDY_IMAGES.map(({ id, src, thumbnail, caption, description, siteLink }) => ({
+                            src,
+                            thumbnail,
+                            caption: <a href={siteLink} target='blank'> {caption} </a>,
+                            description,
+                        }))} />
+                      <Gallery images={CODESTREAM_IMAGES.map(({ id, src, thumbnail, caption, description, siteLink }) => ({
                             src,
                             thumbnail,
                             caption: <a href={siteLink} target='blank'> {caption} </a>,
