@@ -6,23 +6,31 @@ import Layout from '../components/layout'
 import Gallery from '../components/Gallery'
 
 import thumb01 from '../assets/images/thumbs/EB-thumbnail.png'
-import thumb02 from '../assets/images/thumbs/02.jpg'
+import thumb02 from '../assets/images/thumbs/CS-thumbnail.png'
 
-
+// Exercise buddy full size photos/screenshots
 import full01 from '../assets/images/fulls/eb-mobile.png'
 import full02 from '../assets/images/fulls/eb-full.png'
-import full03 from '../assets/images/fulls/cs-full.png'
+import full03 from '../assets/images/fulls/eb-workout.png'
+
+//CodeStream full size photos/screenshots
+import full04 from '../assets/images/fulls/cs-main.png'
+import full05 from '../assets/images/fulls/cs-full.png'
+import full06 from '../assets/images/fulls/cs-streams.png'
 
 const EXERCICSE_BUDDY_IMAGES = [
     { id: '1', src: full01, thumbnail: thumb01, caption: 'Exercise Buddy', description: 'A mobile responsive fitness tracking web app focused on increasing users performance.', siteLink: 'https://exercise-buddy.herokuapp.com/'},
-    { id: '2', src: full02}
+    { id: '2', src: full02},
+    { id: '3', src: full03}
 ];
+
 const CODESTREAM_IMAGES = [
-    { id: '3', src: full03, thumbnail: thumb02, caption: 'CodeStream', description: 'A Web app to showcase and promote top science and technology live streams and archived videos', siteLink: 'https://code-stream.herokuapp.com/'}
+    { id: '4', src: full04, thumbnail: thumb02, caption: 'CodeStream', description: 'A Web app to showcase and promote top science and technology live streams and archived videos', siteLink: 'https://code-stream.herokuapp.com/'},
+    { id: '2', src: full05},
+    { id: '3', src: full06}
 ];
 
 class HomeIndex extends React.Component {
-
     constructor() {
         super();
 
@@ -100,6 +108,7 @@ class HomeIndex extends React.Component {
                             caption: <a href={siteLink} target='blank'> {caption} </a>,
                             description,
                         }))} />
+                        
                       <Gallery images={CODESTREAM_IMAGES.map(({ id, src, thumbnail, caption, description, siteLink }) => ({
                             src,
                             thumbnail,
@@ -107,9 +116,9 @@ class HomeIndex extends React.Component {
                             description,
                         }))} />
 
-                        <ul className="actions">
+                      {/*<ul className="actions">
                             <li><a href="#" className="button">Full Portfolio</a></li>
-                        </ul>
+                        </ul> */}
                     </section>
 
                     <section id='three'>
