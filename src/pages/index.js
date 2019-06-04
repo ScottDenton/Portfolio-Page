@@ -123,17 +123,18 @@ class HomeIndex extends React.Component {
                     <section id='about_me'>
                       <h2> About Me </h2>
                       <p>
-                        Prior to moving to Seattle in January 2018 I worked the previous 6 years as a Police officer in Western Australia. I found I enjoyed the work but after 6 years of working night shifts and missing out on holidays and special occasions I realized that I never really had a passion for the job and was only continuing to do it because I was unsure what I really wanted to do. This all changed shortly after moving to Seattle.
+                        Prior to moving to Seattle in January 2018 I worked the previous 6 years as a Police officer in Western Australia. I found I enjoyed the work but after 6 years of working night shifts and missing out on holidays and special occasions I realized that I never really had a passion for the job and was only continuing to do it because I was unsure what I really wanted to do. This all changed when I moved to Seattle.
+                      </p>
+                      <p>
+                        For the first time in many years, I found myself with a large amount of free time to explore new hobbies and interests. I decided that I wanted to learn something new, possibly a different language. That's when my wife suggested that I might be interested in learning to code. What initially started off as a couple of hours here and there completing online courses very soon turned into a full-time hobby. It wasn't long after that I realized that I didn't want it to be just another hobby and that I wanted to pursue it as a career.
                       </p>
 
                       <p>
-                        After moving to Seattle, for the first time in many years, I found myself with a large amount of free time and was able explore new hobbies and interests. I decided that I wanted to learn something new, possibly a different language. Thats when my wife suggested that I might be interested in learning to code. What initially started off as a couple of hours here and there completing online courses very soon turned into a full-time hobby.  It wasn't long after that I realized that I didn't want it to be just another hobby and that I wanted to pursue it as a career.
+                        Over the next few months I spent as much time as I could teaching myself the fundamentals of web development (HTML, CSS, JavaScript and Ruby), before enrolling in Flatiron School's Software Engineering course. The program helped me greatly improve my skills with extensive course-work primarily focused on Ruby on Rails, JavaScript and React.
                       </p>
+
                       <p>
-                        Over the next few months I spent as much time as I could teaching myself the fundamentals of web development (HTML, CSS, JavaScript and Ruby), before enrolling in Flatiron Schools Software Engineering course. The program allowed me to greatly improve my skills with extensive course work primarily focused on Ruby on Rails, JavaScript and React.
-                      </p>
-                      <p>
-                        My past studies include a Bachelors Degree with a double major in Economics and Finance from Curtin University of technology. I also have a number of  qualifications from my time as a Police Officer including a diploma in Public Safety.
+                        My past studies include a Bachelors Degree with a double major in Economics and Finance from Curtin University of Technology. I also have a number of  qualifications from my time as a Police Officer, including a Diploma in Public Safety.
                       </p>
 
                       <p>
@@ -141,27 +142,27 @@ class HomeIndex extends React.Component {
                       </p>
 
                       <div id="employementHistory">
-                        <h2>Employement History </h2>
+                        <h2>Employment History </h2>
                         <h3>West Australian Police,<i> Perth, Western Australia</i></h3>
                         <h4>First Class Constable, <i>November 2011 - January 2019</i> </h4>
                         <p>
-                          Former Police Officer with 7 years of experience in investigation, crime prevention and building relationships within a diverse community.
+                          Former Police Officer with seven years of experience in investigation, crime prevention and building relationships within a diverse community.
                         </p>
                         <ul>
                           <li>
-                            Led a team as acting Sergeant of seven officers with responsibilities ranging from managing crime scenes and active incidents to preparing court paperwork and rostering.
+                            Led a team as acting Sergeant of seven officers with responsibilities ranging from managing crime scenes and active incidents, to preparing court paperwork and rostering.
                           </li>
                           <li>
                             Experienced working long hours in very high stress environments whilst maintaining efficiency and productivity.
                           </li>
                           <li>
-                            Responsible for safety and training of junior officers for over 4 years.
+                            Responsible for safety and training of junior officers for over four years.
                           </li>
                           <li>
-                            Well trained in conflict resolution, including interviewing, active listening, mediation and problem solving.
+                            Highly experienced in conflict resolution, including interviewing, active listening, mediation and problem solving.
                           </li>
                           <li>
-                            Emphasis on time management and responsibility for reaching goals and milestones.
+                            Skilled in time management and consistently achieving goals and milestones.
                           </li>
                           <li>
                              Skilled in public speaking to various groups including, team briefings, presenting evidence in Supreme Court, managing crowd control incidents and leading tour groups.
@@ -173,19 +174,20 @@ class HomeIndex extends React.Component {
                         <h2> Education </h2>
                         <h3> Software Engineering</h3>
                         <h4> <i>Flatiron School</i> - Seattle, Washington - 2019</h4>
-                        <p> Studied basic programming skills and full stack web development, learning fundamentals of programming including data structures, algorithms, SQL, IDE’s and debugging tools.
+                        <p> Studied full stack web development and fundamentals of programming, including data structures, algorithms, SQL, IDE’s and debugging tools.
                         </p>
-                        <h3> Bachelors of Commerce(Double Major: Economics and Finance)</h3>
+                        <h3> Bachelors of Commerce (Double Major: Economics and Finance)</h3>
                         <h4> <i>Curtin University of Technology</i> - Perth, Western Australia - 2009</h4>
-                        <p> Graduated on the Vice Chancellors List final semester for placing in top 1% of all students.
+                        <p> Graduated on the Vice Chancellor's List final semester for placing in top 1% of all students.
                         </p>
                       </div>
-                      <a href={Resume}  target='blank' >Download Resume </a>
+                      <div>
+                        <a className='button' href={Resume}  target='blank' >Download Resume </a>
+                      </div>
                     </section>
 
                     <section id="contact">
                         <h2>Get In Touch</h2>
-                        <p>If you have any questions or want to talk about my work or experiences, my contact details are below.</p>
                         <div className="row">
                           <div className="4u 12u$(small)">
                             <ul className="labeled-icons">
