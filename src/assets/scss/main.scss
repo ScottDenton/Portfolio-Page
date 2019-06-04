@@ -66,7 +66,7 @@
 
 	a {
 		@include vendor('transition', ('color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
-		border-bottom: dotted 1px;
+		// border-bottom: dotted 1px;
 		color: _palette(accent1, bg);
 		text-decoration: none;
 
@@ -101,6 +101,7 @@
 			text-decoration: none;
 		}
 	}
+
 
 	h1 {
 		font-size: 2em;
@@ -239,6 +240,33 @@
 				font-size: 2em;
 			}
 		}
+	}
+	#employementHistory > h2 {
+	padding-top: 10px;
+	}
+	#employementHistory > h3{
+		margin: 2px;
+	}
+	#employementHistory > h4{
+		margin: 2px;
+	}
+	#employementHistory > p{
+		margin: 2px;
+	}
+
+	#education > h2 {
+		padding-top: 10px;
+		margin-bottom: 0px
+	}
+	#education > h3{
+	margin: 10px 2px 2px 2px;
+	}
+
+	#education > h4{
+		margin: 2px;
+	}
+	#education > p{
+		margin: 2px;
 	}
 
 /* Form */

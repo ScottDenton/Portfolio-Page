@@ -11,7 +11,7 @@ class Footer extends React.Component {
                         <li><a href="mailto:scott.denton.sde@gmail.com" className="icon fa-envelope-o"><span className="label">Email</span></a></li>
                     </ul>
                     <ul className="copyright">
-                        <li>&copy; Gatsby Starter Strata</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        <li>&copy; Gatsby Starter Strata</li><li>Design: <a href="http://html5up.net" target='blank'>HTML5 UP</a></li>
                     </ul>
                 </div>
             </div>

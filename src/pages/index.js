@@ -2,6 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import ReactContactForm from 'react-mail-form';
 
+import Resume from '../components/Scott-Denton-Resume.pdf'
+
 import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
@@ -100,7 +102,7 @@ class HomeIndex extends React.Component {
                     </section>
 
                     <section id="recent_work">
-                        <h2>Recent Work</h2>
+                        <h2>Recent Projects</h2>
 
                         <Gallery images={EXERCICSE_BUDDY_IMAGES.map(({ id, src, thumbnail, caption, description, siteLink }) => ({
                             src,
@@ -115,6 +117,7 @@ class HomeIndex extends React.Component {
                             caption: <a href={siteLink} target='blank'> {caption} </a>,
                             description,
                         }))} />
+
                     </section>
 
                     <section id='about_me'>
@@ -136,6 +139,48 @@ class HomeIndex extends React.Component {
                       <p>
                         I am currently looking for a Software Engineering role that will both challenge me and enable me to continue to learn and improve on my growing skillset as a full stack developer. Although my current personal projects are focused on using Rails and React, I am willing and excited to learn any technologies required.
                       </p>
+
+                      <div id="employementHistory">
+                        <h2>Employement History </h2>
+                        <h3>West Australian Police,<i> Perth, Western Australia</i></h3>
+                        <h4>First Class Constable, <i>November 2011 - January 2019</i> </h4>
+                        <p>
+                          Former Police Officer with 7 years of experience in investigation, crime prevention and building relationships within a diverse community.
+                        </p>
+                        <ul>
+                          <li>
+                            Led a team as acting Sergeant of seven officers with responsibilities ranging from managing crime scenes and active incidents to preparing court paperwork and rostering.
+                          </li>
+                          <li>
+                            Experienced working long hours in very high stress environments whilst maintaining efficiency and productivity.
+                          </li>
+                          <li>
+                            Responsible for safety and training of junior officers for over 4 years.
+                          </li>
+                          <li>
+                            Well trained in conflict resolution, including interviewing, active listening, mediation and problem solving.
+                          </li>
+                          <li>
+                            Emphasis on time management and responsibility for reaching goals and milestones.
+                          </li>
+                          <li>
+                             Skilled in public speaking to various groups including, team briefings, presenting evidence in Supreme Court, managing crowd control incidents and leading tour groups.
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div id="education">
+                        <h2> Education </h2>
+                        <h3> Software Engineering</h3>
+                        <h4> <i>Flatiron School</i> - Seattle, Washington - 2019</h4>
+                        <p> Studied basic programming skills and full stack web development, learning fundamentals of programming including data structures, algorithms, SQL, IDE’s and debugging tools.
+                        </p>
+                        <h3> Bachelors of Commerce(Double Major: Economics and Finance)</h3>
+                        <h4> <i>Curtin University of Technology</i> - Perth, Western Australia - 2009</h4>
+                        <p> Graduated on the Vice Chancellors List final semester for placing in top 1% of all students.
+                        </p>
+                      </div>
+                      <a href={Resume}  target='blank' >Download Resume </a>
                     </section>
 
                     <section id="contact">

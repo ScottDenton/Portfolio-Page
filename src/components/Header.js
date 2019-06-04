@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Footer from './Footer'
-import avatar from '../assets/images/avatar.jpg'
+import avatar from '../assets/images/avatar.jpeg'
 import Resume from './Scott-Denton-Resume.pdf'
 
 
@@ -17,7 +17,7 @@ class Header extends React.Component {
                       <li><a href="#recent_work" className="headerLink">My Projects </a></li>
                       <li><a href="#about_me" className="headerLink">About Me </a></li>
                       <li><a href="#contact" className="headerLink">Get in touch</a></li>
-                      <li><a href={Resume} className="headerLink"  target='blank' >Download Resume </a></li>
+                      <li><a href={Resume} className="headerLink"  target='blank' >View My Resume </a></li>
                     </ul>
                 </div>
                 <Footer />
