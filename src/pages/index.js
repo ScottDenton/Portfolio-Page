@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import ReactContactForm from 'react-mail-form';
 
 import Layout from '../components/layout'
 // import Lightbox from 'react-images'
@@ -87,7 +88,6 @@ class HomeIndex extends React.Component {
                 </Helmet>
 
                 <div id="main">
-
                     <section id="one">
                         <header className="major">
                             <h2>Scott Denton - Software Developer</h2>
@@ -95,11 +95,11 @@ class HomeIndex extends React.Component {
                         <p>
                           Former Police Officer turned full stack web developer. In addition to proficiency in Ruby on Rails, JavaScript and React/Redux, I bring strong interpersonal, public speaking and communication skills, experience managing teams and extensive knowledge in breaking down problems into their component parts.</p>
                         <ul className="actions">
-                            <li><a href="#three" className="button">Learn More</a></li>
+                            <li><a href="#about_me" className="button">Learn More</a></li>
                         </ul>
                     </section>
 
-                    <section id="two">
+                    <section id="recent_work">
                         <h2>Recent Work</h2>
 
                         <Gallery images={EXERCICSE_BUDDY_IMAGES.map(({ id, src, thumbnail, caption, description, siteLink }) => ({
@@ -108,33 +108,29 @@ class HomeIndex extends React.Component {
                             caption: <a href={siteLink} target='blank'> {caption} </a>,
                             description,
                         }))} />
-                        
+
                       <Gallery images={CODESTREAM_IMAGES.map(({ id, src, thumbnail, caption, description, siteLink }) => ({
                             src,
                             thumbnail,
                             caption: <a href={siteLink} target='blank'> {caption} </a>,
                             description,
                         }))} />
-
-                      {/*<ul className="actions">
-                            <li><a href="#" className="button">Full Portfolio</a></li>
-                        </ul> */}
                     </section>
 
-                    <section id='three'>
+                    <section id='about_me'>
                       <h2> About Me </h2>
                       <p>
                         Prior to moving to Seattle in January 2018 I worked the previous 6 years as a Police officer in Western Australia. I found I enjoyed the work but after 6 years of working night shifts and missing out on holidays and special occasions I realized that I never really had a passion for the job and was only continuing to do it because I was unsure what I really wanted to do. This all changed shortly after moving to Seattle.
                       </p>
 
                       <p>
-                        After moving to Seattle, for the first time in many years, I found myself with a large amount of free time and was able explore new hobbies and interests. I decided that I wanted to learn something new, possibly a different language, when my wife suggested that I might be interested in learning to code. What initially started off as a couple of hours here and there completing online courses very soon turned into a full-time hobby.  It wasn't long after that I realized that I didn't want it to be just another hobby and that I wanted to pursue it as a career.
+                        After moving to Seattle, for the first time in many years, I found myself with a large amount of free time and was able explore new hobbies and interests. I decided that I wanted to learn something new, possibly a different language. Thats when my wife suggested that I might be interested in learning to code. What initially started off as a couple of hours here and there completing online courses very soon turned into a full-time hobby.  It wasn't long after that I realized that I didn't want it to be just another hobby and that I wanted to pursue it as a career.
                       </p>
                       <p>
                         Over the next few months I spent as much time as I could teaching myself the fundamentals of web development (HTML, CSS, JavaScript and Ruby), before enrolling in Flatiron Schools Software Engineering course. The program allowed me to greatly improve my skills with extensive course work primarily focused on Ruby on Rails, JavaScript and React.
                       </p>
                       <p>
-                        My past studies include a Bachelors Degree with a double major in Economics and Finance as well as a number of public safety qualifications.
+                        My past studies include a Bachelors Degree with a double major in Economics and Finance from Curtin University of technology. I also have a number of  qualifications from my time as a Police Officer including a diploma in Public Safety.
                       </p>
 
                       <p>
@@ -142,45 +138,29 @@ class HomeIndex extends React.Component {
                       </p>
                     </section>
 
-                    <section id="four">
+                    <section id="contact">
                         <h2>Get In Touch</h2>
-                        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+                        <p>If you have any questions or want to talk about my work or experiences, my contact details are below.</p>
                         <div className="row">
-                            <div className="8u 12u$(small)">
-                                <form method="post" action="#">
-                                    <div className="row uniform 50%">
-                                        <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                                        <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                                        <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                                    </div>
-                                </form>
-                                <ul className="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                </ul>
-                            </div>
-                            <div className="4u 12u$(small)">
-                                <ul className="labeled-icons">
-                                    <li>
-                                        <h3 className="icon fa-home"><span className="label">Address</span></h3>
-                                        1234 Somewhere Rd.<br />
-                                        Nashville, TN 00000<br />
-                                        United States
-                                    </li>
-                                    <li>
-                                        <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
-                                        000-000-0000
-                                    </li>
-                                    <li>
-                                        <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">hello@untitled.tld</a>
-                                    </li>
-                                </ul>
-                            </div>
+                          <div className="4u 12u$(small)">
+                            <ul className="labeled-icons">
+                              <li>
+                                  <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
+                                  206-398-9439
+                              </li>
+                              <li>
+                                  <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
+                                  <a href="mailto:scott.denton.sde@gmail.com">scott.denton.sde@gmail.com</a>
+                              </li>
+                            </ul>
+                            <ul className='icons'>
+                                <li><a href="https://www.linkedin.com/in/scott-denton-063152178/" target = 'blank' className="icon fa-linkedin"><span className="label">Twitter</span></a></li>
+                                <li><a href="https://github.com/scottdenton" target = 'blank' className="icon fa-github"><span className="label">Github</span></a></li>
+                            </ul>
+                          </div>
                         </div>
                     </section>
-
                 </div>
-
             </Layout>
         )
     }
