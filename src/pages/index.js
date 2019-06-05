@@ -181,7 +181,7 @@ class HomeIndex extends React.Component {
                         <p> Graduated on the Vice Chancellor's List final semester for placing in top 1% of all students.
                         </p>
                       </div>
-                      <div>
+                      <div className='resumeButton'>
                         <a className='button' href={Resume}  target='blank' >Download Resume </a>
                       </div>
                     </section>
