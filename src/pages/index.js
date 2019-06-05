@@ -1,6 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import ReactContactForm from 'react-mail-form';
 
 import Resume from '../components/Scott-Denton-Resume.pdf'
 
