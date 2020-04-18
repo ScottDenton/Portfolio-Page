@@ -149,7 +149,7 @@ class HomeIndex extends React.Component {
                           <a href="https://vimeo.com/334182434" target="_blank">Video Demo</a>
                         </p>
                       <hr/>
-                      
+
                       <Gallery images={CODESTREAM_IMAGES.map(({ id, src, thumbnail, caption, siteLink }) => ({
                             src,
                             thumbnail,
@@ -174,26 +174,6 @@ class HomeIndex extends React.Component {
                     </section>
 
                     <section id='about_me'>
-                      <h2> About Me </h2>
-                      <p>
-                        Prior to moving to Seattle in January 2018 I worked the previous 6 years as a Police officer in Western Australia. I found I enjoyed the work but after 6 years of working night shifts and missing out on holidays and special occasions I realized that I never really had a passion for the job and was only continuing to do it because I was unsure what I really wanted to do. This all changed when I moved to Seattle.
-                      </p>
-                      <p>
-                        For the first time in many years, I found myself with a large amount of free time to explore new hobbies and interests. I decided that I wanted to learn something new, possibly a different language. That's when my wife suggested that I might be interested in learning to code. What initially started off as a couple of hours here and there completing online courses very soon turned into a full-time hobby. It wasn't long after that I realized that I didn't want it to be just another hobby and that I wanted to pursue it as a career.
-                      </p>
-
-                      <p>
-                        Over the next few months I spent as much time as I could teaching myself the fundamentals of web development (HTML, CSS, JavaScript and Ruby), before enrolling in Flatiron School's Software Engineering course. The program helped me greatly improve my skills with extensive course-work primarily focused on Ruby on Rails, JavaScript and React.
-                      </p>
-
-                      <p>
-                        My past studies include a Bachelors Degree with a double major in Economics and Finance from Curtin University of Technology. I also have a number of  qualifications from my time as a Police Officer, including a Diploma in Public Safety.
-                      </p>
-
-                      <p>
-                        I am currently looking for a Software Engineering role that will both challenge me and enable me to continue to learn and improve on my growing skillset as a full stack developer. Although my current personal projects are focused on using Rails and React, I am willing and excited to learn any technologies required.
-                      </p>
-
                       <div id="employementHistory">
                         <h2>Employment History </h2>
                         <h3 id="hospitality-online">Hospitality Online,</h3><i>Seattle, Washington</i>
@@ -203,7 +183,7 @@ class HomeIndex extends React.Component {
                         </p>
                         <ul>
                           <li>
-                            Designed and built custom job sites for some of the largest hotel management companies in the world. From design to implementation and ongoing maintenance/updates based on customer feedback. With a focus on building a seamless transition from a customers site to our managed career site by fully matching the customers styles and features, using a combination of customer sourced scripts and stylesheets and custom CSS and Javascript/Jquery.
+                            Designed and built custom job sites and employee onboarding software for some of the largest hotel management companies in the world. From design to implementation and ongoing maintenance/updates based on customer feedback. With a focus on building a seamless transition from a customers site to our managed career site by fully matching the customers styles and features, using a combination of customer sourced scripts and stylesheets and custom CSS and Javascript/Jquery.
                           </li>
                           <li>
                             Responsible for building a number of new features, including customer facing products, tools for sales and admin staff and developer tools.
@@ -258,6 +238,28 @@ class HomeIndex extends React.Component {
                       <div className='resumeButton'>
                         <a className='button' href={Resume}  target='blank' >Download Resume </a>
                       </div>
+
+                      <h2> About Me </h2>
+                      <p>
+                        Prior to moving to Seattle in January 2018 I worked the previous 6 years as a Police officer in Western Australia. I found I enjoyed the work but after 6 years of working night shifts and missing out on holidays and special occasions I realized that I never really had a passion for the job and was only continuing to do it because I was unsure what I really wanted to do. This all changed when I moved to Seattle.
+                      </p>
+                      <p>
+                        For the first time in many years, I found myself with a large amount of free time to explore new hobbies and interests. I decided that I wanted to learn something new, possibly a different language. That's when my wife suggested that I might be interested in learning to code. What initially started off as a couple of hours here and there completing online courses very soon turned into a full-time hobby. It wasn't long after that I realized that I didn't want it to be just another hobby and that I wanted to pursue it as a career.
+                      </p>
+
+                      <p>
+                        Over the next few months I spent as much time as I could teaching myself the fundamentals of web development (HTML, CSS, JavaScript and Ruby), before enrolling in Flatiron School's Software Engineering course. The program helped me greatly improve my skills with extensive course-work primarily focused on Ruby on Rails, JavaScript and React.
+                      </p>
+                      <p>
+                        Shortly after I completed my studies at Flatiron School I joined Hospitality Online as a full time Ruby on Rails developer, building career sites and employee onboarding software for some of the largest hotel management companies and hotel chains in the world.
+                        Working on a small team of only seven developers, I have not only had the opportunity to work on every aspect of the app, I have also had the opportunity to train and mentor interns and new junior developers.
+                      </p>
+                      <p>
+                        Although my current work at Hospitality Online is full stack Ruby on Rails I am always willing and excited to learn any new technology that may be required.  My time working at Hospitality Online, has only reinforced my passion for programming. In my spare time I have been learning Java through the use of online courses and look forward to putting my new knowledge and skills to the test.
+                      </p>
+                      <p>
+                        My past studies include a Bachelors Degree with a double major in Economics and Finance from Curtin University of Technology. I also have a number of qualifications from my time as a Police Officer, including a Diploma in Public Safety.
+                      </p>
                     </section>
 
                     <section id="contact">
