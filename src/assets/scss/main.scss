@@ -258,15 +258,21 @@
 		padding-top: 10px;
 		margin-bottom: 0px
 	}
-	#education > h3{
+	#education > h3 {
 	margin: 10px 2px 2px 2px;
 	}
 
-	#education > h4{
+	#education > h4 {
 		margin: 2px;
 	}
-	#education > p{
+	#education > p {
 		margin: 2px;
+	}
+
+	.cjb-examples {
+		li {
+			list-style: none;
+		}
 	}
 
 /* Form */
@@ -905,6 +911,7 @@
 
 	.work-item {
 		margin: 0 0 _size(element-margin) 0;
+		margin-bottom: 10px;
 
 		.image {
 			margin: 0 0 (_size(element-margin) * 0.75) 0;
@@ -913,6 +920,9 @@
 		h3 {
 			font-size: 1em;
 			margin: 0 0 (_size(element-margin) * 0.25) 0;
+			a {
+				font-size: 1.1em;
+			}
 		}
 
 		p {

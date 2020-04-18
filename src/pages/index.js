@@ -94,29 +94,83 @@ class HomeIndex extends React.Component {
                             <h2>Scott Denton - Software Developer</h2>
                         </header>
                         <p>
-                          Former Police Officer turned full stack web developer. In addition to proficiency in Ruby on Rails, JavaScript and React/Redux, I bring strong interpersonal, public speaking and communication skills, experience managing teams and extensive knowledge in breaking down problems into their component parts.</p>
+                          Full stack Ruby on Rails developer with professional experience across the complete development life cycle of the worlds largest hospitality job board. In addition to proficiency in Ruby on Rails, JavaScript/Jquery and experience in React/Redux, I bring strong interpersonal, public speaking and communication skills, experience managing teams and extensive knowledge in breaking down problems into their component parts.</p>
                         <ul className="actions">
                             <li><a href="#about_me" className="button">Learn More</a></li>
                         </ul>
                     </section>
 
                     <section id="recent_work">
-                        <h2>Recent Projects</h2>
+                      <h2>Recent Work</h2>
+                        <h3>Custom Career Sites </h3>
+                        <p> Whilst working at <a href="#hospitality-online">Hospitality Online</a> I was responsible for designing, building and maintaining custom career sites. These are fully managed sites designed to offer a seamless transition from a clients own website to our custom built career site, giving the user the feeling that they never left the clients original site. These sites were all built with Ruby on Rails, with some being built from the ground up with custom CSS and Javascript/Jquery, whilst others used a combination of custom CSS and JavaScript and the clients existing stylesheets and scripts. </p>
 
-                        <Gallery images={EXERCICSE_BUDDY_IMAGES.map(({ id, src, thumbnail, caption, description, siteLink }) => ({
+                        <p> During my time at Hospitality Online, I contributed to the buildling and maintenance of over 20 career sites. This included making updates and building new features at client requests, bug fixes and general code maintenance. Below are some examples of sites that I have developed and currently maintain.  </p>
+                        <ul class="cjb-examples">
+                          <li>
+                            <a href="https://careers.thehotelgroup.com/" target="blank">The Hotel Group</a>
+                          </li>
+                          <li>
+                            <a href="https://careers.ingrouphospitality.com/" target="blank">Ingroup Hospitality</a>
+                          </li>
+                          <li>
+                            <a href="https://careers.pacificpalmsresort.com/" target="blank">Pacific Palms Resort</a>
+                          </li>
+                          <li>
+                            <a href="https://careers.scottsdaleplaza.com/" target="blank">The Scottsdale Plaza Resort</a>
+                          </li>
+                        </ul>
+
+                        <h3>Projects</h3>
+
+                        <Gallery images={EXERCICSE_BUDDY_IMAGES.map(({ id, src, thumbnail, caption, siteLink }) => ({
                             src,
                             thumbnail,
                             caption: <a href={siteLink} target='blank'> {caption} </a>,
-                            description,
                         }))} />
-
-                      <Gallery images={CODESTREAM_IMAGES.map(({ id, src, thumbnail, caption, description, siteLink }) => ({
+                        <p> A mobile responsive fitness tracking web app focused on increasing users performance.
+                          <ul>
+                            <li>
+                              Developed Rails API backend with endpoints for users, workouts and individual exercises.
+                            </li>
+                            <li>
+                              Utilized WGER API to pull and parse approved exercise data.
+                            </li>
+                            <li>
+                              Built user interface with React and custom CSS.
+                            </li>
+                            <li>
+                              Implemented React Router for state management and site navigation.
+                            </li>
+                            <li>
+                              Utilized BCrypt and local storage for user authentication.
+                            </li>
+                          </ul>
+                          <a href="https://vimeo.com/334182434" target="_blank">Video Demo</a>
+                        </p>
+                      <hr/>
+                      
+                      <Gallery images={CODESTREAM_IMAGES.map(({ id, src, thumbnail, caption, siteLink }) => ({
                             src,
                             thumbnail,
-                            caption: <a href={siteLink} target='blank'> {caption} </a>,
-                            description,
+                            caption: <a href={siteLink} target='blank'> {caption} </a>
                         }))} />
-
+                        <p> A web app to showcase and promote top science and technology live streams and archived videos.
+                          <ul>
+                            <li>
+                              Implemented Rails API backend with endpoints for users, live streams, videos and favorites.
+                            </li>
+                            <li>
+                              Employed Twitch API to pull up to date Live Stream data.
+                            </li>
+                            <li>
+                              Designed user interface with React, Bootstrap and custom CSS.
+                            </li>
+                            <li>
+                              Utilized Heroku for deployment of both front and back ends.
+                            </li>
+                          </ul>
+                        </p>
                     </section>
 
                     <section id='about_me'>
@@ -142,6 +196,27 @@ class HomeIndex extends React.Component {
 
                       <div id="employementHistory">
                         <h2>Employment History </h2>
+                        <h3 id="hospitality-online">Hospitality Online,</h3><i>Seattle, Washington</i>
+                        <h4>Ruby on Rails Developer, <i>July 2019 - present</i> </h4>
+                        <p>
+                          Full stack ruby on rails developer working in a small agile development team, building and maintaining the largest hospitality job board in the world with over 2 million members and over 20 million site visitors annually.
+                        </p>
+                        <ul>
+                          <li>
+                            Designed and built custom job sites for some of the largest hotel management companies in the world. From design to implementation and ongoing maintenance/updates based on customer feedback. With a focus on building a seamless transition from a customers site to our managed career site by fully matching the customers styles and features, using a combination of customer sourced scripts and stylesheets and custom CSS and Javascript/Jquery.
+                          </li>
+                          <li>
+                            Responsible for building a number of new features, including customer facing products, tools for sales and admin staff and developer tools.
+                            Responsible for collating data from a large number of sources including API’s and custom built scrapers, predominantly with Nokogiri and HTTParty, for building new sites and to increase the number of opportunities available to users.
+                          </li>
+                          <li>
+                            Responsible for increasing test coverage across entire app, writing hundreds of new tests using Capybara and RSpec.
+                          </li>
+                          <li>
+                            Assisted in training new junior developers and interns in best practices and in conducting code reviews.
+                          </li>
+                         </ul>
+
                         <h3>West Australian Police,<i> Perth, Western Australia</i></h3>
                         <h4>First Class Constable, <i>November 2011 - January 2019</i> </h4>
                         <p>
