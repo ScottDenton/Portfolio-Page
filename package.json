@@ -9,12 +9,17 @@
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.10",
     "gatsby-plugin-sass": "^2.0.11",
+    "is-descriptor": "^3.0.0",
+    "is-extendable": "^1.0.1",
     "node-sass": "^4.11.0",
+    "object-copy": "^1.0.0",
+    "posix-character-classes": "^1.0.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-helmet": "^5.2.0",
     "react-images": "^0.5.19",
-    "react-mail-form": "^1.0.3"
+    "react-mail-form": "^1.0.3",
+    "webpack": "^4.42.1"
   },
   "keywords": [
     "gatsby"
