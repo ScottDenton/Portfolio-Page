@@ -14,10 +14,10 @@ class Header extends React.Component {
                     <h1 className="headerName"><strong style={{"font-size": '1.35em'}} >Scott Denton</strong></h1>
                     <h1>Software Developer </h1>
                     <ul className='headerLinkUl'>
-                      <li><a href="#recent_work" className="headerLink">Recent Work </a></li>
+                      <li><a href="#recent_work" className="headerLink">Recent Work & Projects</a></li>
+                      <li><a href="#employementHistory" className="headerLink">Employment History </a></li>
                       <li><a href="#about_me" className="headerLink">About Me </a></li>
                       <li><a href="#contact" className="headerLink">Get In Touch</a></li>
-                      <li><a href="https://medium.com/@scott.denton.1989" className="headerLink">Blog Posts</a></li>
                       <li><a href={Resume} className="headerLink"  target='blank' >View My Resume </a></li>
                     </ul>
                 </div>
