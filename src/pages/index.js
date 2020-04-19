@@ -173,10 +173,10 @@ class HomeIndex extends React.Component {
                         </p>
                     </section>
 
-                    <section id='about_me'>
+                    <section>
                       <div id="employementHistory">
                         <h2>Employment History </h2>
-                        <h3 id="hospitality-online">Hospitality Online,</h3><i>Seattle, Washington</i>
+                        <h3 id="hospitality-online">Hospitality Online,<i> Seattle, Washington</i></h3>
                         <h4>Ruby on Rails Developer, <i>July 2019 - present</i> </h4>
                         <p>
                           Full stack ruby on rails developer working in a small agile development team, building and maintaining the largest hospitality job board in the world with over 2 million members and over 20 million site visitors annually.
@@ -186,11 +186,13 @@ class HomeIndex extends React.Component {
                             Designed and built custom job sites and employee onboarding software for some of the largest hotel management companies in the world. From design to implementation and ongoing maintenance/updates based on customer feedback. With a focus on building a seamless transition from a customers site to our managed career site by fully matching the customers styles and features, using a combination of customer sourced scripts and stylesheets and custom CSS and Javascript/Jquery.
                           </li>
                           <li>
-                            Responsible for building a number of new features, including customer facing products, tools for sales and admin staff and developer tools.
+                            Built a number of new features, including customer facing products, tools for sales and admin staff and developer tools.
+                          </li>
+                          <li>
                             Responsible for collating data from a large number of sources including API’s and custom built scrapers, predominantly with Nokogiri and HTTParty, for building new sites and to increase the number of opportunities available to users.
                           </li>
                           <li>
-                            Responsible for increasing test coverage across entire app, writing hundreds of new tests using Capybara and RSpec.
+                            Increased test coverage across entire app, writing hundreds of new tests using Capybara and RSpec.
                           </li>
                           <li>
                             Assisted in training new junior developers and interns in best practices and in conducting code reviews.
@@ -239,9 +241,9 @@ class HomeIndex extends React.Component {
                         <a className='button' href={Resume}  target='blank' >Download Resume </a>
                       </div>
 
-                      <h2> About Me </h2>
+                      <h2 id='about_me'> About Me </h2>
                       <p>
-                        Prior to moving to Seattle in January 2018 I worked the previous 6 years as a Police officer in Western Australia. I found I enjoyed the work but after 6 years of working night shifts and missing out on holidays and special occasions I realized that I never really had a passion for the job and was only continuing to do it because I was unsure what I really wanted to do. This all changed when I moved to Seattle.
+                        Prior to moving to Seattle I worked the previous seven years as a Police officer in Western Australia. I found I enjoyed the work but after seven years of working night shifts and missing out on holidays and special occasions I realized that I never really had a passion for the job and was only continuing to do it because I was unsure what I really wanted to do. This all changed when I moved to Seattle.
                       </p>
                       <p>
                         For the first time in many years, I found myself with a large amount of free time to explore new hobbies and interests. I decided that I wanted to learn something new, possibly a different language. That's when my wife suggested that I might be interested in learning to code. What initially started off as a couple of hours here and there completing online courses very soon turned into a full-time hobby. It wasn't long after that I realized that I didn't want it to be just another hobby and that I wanted to pursue it as a career.
